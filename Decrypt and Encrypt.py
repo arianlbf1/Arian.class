@@ -1,7 +1,6 @@
 password = ""
 i = 0
-# finds 
-def key_Encrypt(i,key):
+def key_Encrypt(i, key):
     answer = ""
     list = "ABCDEFGHIJKLMNOPQURSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*(){}[]:;'\"<>,./`~-_+=\|?/ "
     l = 0
