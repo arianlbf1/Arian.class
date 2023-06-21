@@ -5,14 +5,14 @@ def key_Encrypt(i, key):
     list = "ABCDEFGHIJKLMNOPQURSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*(){}[]:;'\"<>,./`~-_+=\|?/ "
     l = 0
     l = len(password)
-    l_list = len(list)
-    while key > l_list:
-        key -= l_list
+    len_list = len(list)
+    while key > len_list:
+        key -= len_list
     while not l == 0:
         index = password[i]
         list_find = list.find(index) + key
-        if list_find > l_list:
-            list_find -= l_list
+        if list_find > len_list:
+            list_find -= len_list
         answer += list[list_find]
         l -= 1
         i += 1
@@ -23,15 +23,15 @@ def key_Decrypt(i, key):
     list = "ABCDEFGHIJKLMNOPQURSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*(){}[]:;'\"<>,./`~-_+=\|?/ "
     l = 0
     l = len(password)
-    l_list = len(list)
-    while key > l_list:
-        key -= l_list
+    len_list = len(list)
+    while key > len_list:
+        key -= len_list
     while not l == 0:
         list_find = 0
         index = password[i]
         list_find = list.find(index) - key
-        if list_find > l_list:
-            list_find += l_list 
+        if list_find > len_list:
+            list_find += len_list 
         answer += list[list_find]
         l -= 1
         i += 1
