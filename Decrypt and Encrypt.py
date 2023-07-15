@@ -2,7 +2,7 @@ password = ""
 i = 0
 def key_Encrypt(i, key):
     answer = ""
-    list = "ABCDEFGHIJKLMNOPQURSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*(){}[]:;'\"<>,./`~-_+=\|?/ "
+    list = "ABCDEFGHIJKLMNOPQURSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*(){}[]:;'\"<>,.`~-_+=\|?/ "
     l = 0
     l = len(password)
     len_list = len(list)
@@ -20,7 +20,7 @@ def key_Encrypt(i, key):
 
 def key_Decrypt(i, key):
     answer = ""
-    list = "ABCDEFGHIJKLMNOPQURSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*(){}[]:;'\"<>,./`~-_+=\|?/ "
+    list = "ABCDEFGHIJKLMNOPQURSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*(){}[]:;'\"<>,.`~-_+=\|?/ "
     l = 0
     l = len(password)
     len_list = len(list)

@@ -17,7 +17,7 @@ def readInformation(id):
 def enter_password(i, user_password):
     key = random.randint(0,1000)
     secure_password = ""
-    list = "ABCDEFGHIJKLMNOPQURSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*(){}[]:;'\"<>./`~-_+=\|?/ "
+    list = "ABCDEFGHIJKLMNOPQURSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*(){}[]:;'\"<>.`~-_+=\|?/ "
     l = 0
     l = len(user_password)
     len_list = len(list)
@@ -37,7 +37,7 @@ def enter_password(i, user_password):
 def enter_generated_password(i, generated_password):
     key = random.randint(0,1000)
     secure_password = ""
-    list = "ABCDEFGHIJKLMNOPQURSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*(){}[]:;'\"<>./`~-_+=\|?/ "
+    list = "ABCDEFGHIJKLMNOPQURSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*(){}[]:;'\"<>.`~-_+=\|?/ "
     l = 0
     l = len(generated_password)
     len_list = len(list)
@@ -58,7 +58,7 @@ def enter_generated_password(i, generated_password):
 def give_password(i, id_key):
     encrypted_password = readInformation(id)
     original_password = ""
-    list = "ABCDEFGHIJKLMNOPQURSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*(){}[]:;'\"<>./`~-_+=\|?/ "
+    list = "ABCDEFGHIJKLMNOPQURSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*(){}[]:;'\"<>.`~-_+=\|?/ "
     l = 0
     l = len(encrypted_password)
     len_list = int(len(list))
@@ -78,7 +78,7 @@ def give_password(i, id_key):
 def random_password(random_length):
     loop = 0
     generated_password = ''
-    list = "ABCDEFGHIJKLMNOPQURSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*(){}[]:;'\"<>./`~-_+=\|?/ "
+    list = "ABCDEFGHIJKLMNOPQURSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*(){}[]:;'\"<>.`~-_+=\|?/ "
     len_list = len(list)
     while not loop == random_length:
         generated_password += list[random.randint(0, len_list)]
