@@ -58,7 +58,7 @@ def enter_generated_password(i, generated_password):
 def give_password(i, id_key):
     encrypted_password = readInformation(id)
     original_password = ""
-    list = "ABCDEFGHIJKLMNOPQURSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*(){}[]:;'\"<>,./`~-_+=\|?/ "
+    list = "ABCDEFGHIJKLMNOPQURSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*(){}[]:;'\"<>./`~-_+=\|?/ "
     l = 0
     l = len(encrypted_password)
     len_list = int(len(list))
