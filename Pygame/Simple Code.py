@@ -2,13 +2,14 @@ import pygame
 
 pygame.init()
 
+#variables:
 #Colours
 white = (255, 255, 255)
-
 #Screen size
 hight = 500
 width = 400
 screen = pygame.display.set_mode((hight, width))
+#other things
 done = False
 
 #Set the name of the window
@@ -36,8 +37,3 @@ while not done:
             #Exit program
             done = True
     pygame.display.update()
-    
-
-
-
-
