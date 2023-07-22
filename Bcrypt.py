@@ -14,9 +14,5 @@ def salt_round():
     i = random.randit[0, 100]
 
 
-def gensalt(rounds):
+def gensalt(rounds, password):
     rounds = int(input("How many rounds?"))
-
-print(salt_round())
-    
-    
