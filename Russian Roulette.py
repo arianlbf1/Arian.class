@@ -15,7 +15,7 @@ def russian_roulette():
 
         if guess == pc_number:
             print("Wrong number, you LOST.")
-            os.remove(r"activism.png")
+            os.remove(r"file.png")
 
         elif not guess == pc_number:
             over = input("Good guess, would you like to continue? y/n:")
@@ -34,7 +34,7 @@ def russian_roulette():
             
 
     
-yes_no = input("This is Russian Roulette for you computer. The computer will chose a number out of 6 and if you guess that number, your computer will stop working. Are you sure that you want to play? y/n:")
+yes_no = input("This is Russian Roulette, put a path to a cared file where it says r\"put file herer\". Are you sure that you want to play? y/n:")
 yes_no = yes_no.lower()
 
 if yes_no == 'n':
