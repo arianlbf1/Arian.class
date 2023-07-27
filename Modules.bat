@@ -1,0 +1,2 @@
+start
+pip install pygame
