@@ -4,29 +4,50 @@ import time
 
 def russian_roulette():
     done = False
-
+    file = (input("Enter the path to your file:"))
     while not done:
         pc_number = random.randint(1, 6)
         print(pc_number)
         guess = int(input("Enter a number 1 to 6:"))
 
-        print("Checking guess.")
-        time.sleep(5)
+        print("The wheel is spinning.")
+        time.sleep(2)
+        print("The wheel is stopping")
+        time.sleep(1)
+        print("it flew past", random.randint(1, 6))
+        time.sleep(1)
+        print("its stopping but it passed", random.randint(1, 6))
+        time.sleep(1)
+        print("Oh no, its very close to", random.randint(1, 6))
+        time.sleep(1)
+        print("It landed on", pc_number)
 
         if guess == pc_number:
-            print("Wrong number, you LOST.")
-            os.remove(r"file.png")
+            print("You LOST.")
+            os.remove(file)
+            over = input("Would you like to continue? y/n")
+            over = over.lower
+             
+            if over == 'n':
+                print("Play again soon, bye.")
+                done = True
 
+            elif over == 'y':
+                print("Okay.")
+
+            else:
+                print("ERROR")
+            
         elif not guess == pc_number:
             over = input("Good guess, would you like to continue? y/n:")
             over = over.lower()
 
-            if over == 'y':
+            if over == 'n':
                 print("Play again soon, bye.")
                 done = True
 
-            elif over == 'n':
-                print("Feeling lucky, okay.")
+            elif over == 'y':
+                print("Okay.")
 
             else:
                 print("ERROR")
@@ -34,14 +55,13 @@ def russian_roulette():
             
 
     
-yes_no = input("This is Russian Roulette, put a path to a cared file where it says r\"put file herer\". Are you sure that you want to play? y/n:")
+yes_no = input("This is Russian Roulette. Start game? y/n:")
 yes_no = yes_no.lower()
 
 if yes_no == 'n':
     print("Okay, bye.")
 
 elif yes_no == 'y':
-    print("Lets start.")
     russian_roulette()
 
 else:
