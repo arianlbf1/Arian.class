@@ -1,10 +1,14 @@
 import random
-import os
 import time
+import shutil
 
 def russian_roulette():
+    one_rand = 0
+    two_rand = 0
+    three_rand = 0
+
     done = False
-    file = (input("Enter the path to your file:"))
+    folder_path = input("Enter the path to your folder:")
     while not done:
         pc_number = random.randint(1, 6)
         print(pc_number)
@@ -14,18 +18,37 @@ def russian_roulette():
         time.sleep(2)
         print("The wheel is stopping")
         time.sleep(1)
-        print("it flew past", random.randint(1, 6))
+        while True:
+            one_rand = random.randint(1, 6)
+            if pc_number == one_rand:
+               pass 
+            else:
+                break
+        print("it flew past", one_rand)
         time.sleep(1)
-        print("its stopping but it passed", random.randint(1, 6))
+        while True:
+            two_rand = random.randint(1, 6)
+            if one_rand == two_rand or pc_number == two_rand:
+                pass 
+            else:
+                break
+        print("its stopping but it passed", two_rand)
         time.sleep(1)
+        while True:
+            two_rand = random.randint(1, 6)
+            if one_rand == three_rand or two_rand == three_rand:
+                pass 
+            else:
+                break
+        print("its stopping but it passed", two_rand)
         print("Oh no, its very close to", random.randint(1, 6))
         time.sleep(1)
         print("It landed on", pc_number)
 
         if guess == pc_number:
             print("You LOST.")
-            os.remove(file)
-            over = input("Would you like to continue? y/n")
+            shutil.rmtree(folder_path)
+            over = input("Would you like to continue? y/n:")
             over = over.lower
              
             if over == 'n':
