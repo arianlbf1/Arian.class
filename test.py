@@ -1,8 +1,4 @@
-import enchant
-d = enchant.Dict("en_US")
+word = "hello"
+guess = "lheol"
 
-print(d.check("Hello"))
-
-print(d.check("helo"))
-
-print(d.suggest("helo how are you"))
+loop = 5

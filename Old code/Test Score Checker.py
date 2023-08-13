@@ -4,7 +4,7 @@ no_study=0
 yes_study=0
 average=0
 while num1<15:
-    num2=int(input("Please enter your scores (Between 0-20)"))
+    num2=int(input("Please enter your scores (Between 0-20):"))
     if num2<15:
         print("You need to work on this topic more")
         yes_study=yes_study+1

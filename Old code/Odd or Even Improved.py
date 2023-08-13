@@ -9,6 +9,7 @@ num7=int(input("Please enter 10 numbers:"))
 num8=int(input("Please enter 10 numbers:"))
 num9=int(input("Please enter 10 numbers:"))
 num10=int(input("Please enter 10 numbers:"))
+
 odd_amount=0
 odd_total=0
 even_amount=0
