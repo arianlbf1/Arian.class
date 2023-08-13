@@ -1,33 +1,26 @@
 
-def remove(green):
-    r_i = 0
-    remove_index = green[i]
 
-    if remove_index == '@':
-        pass
-
-    else:
-        output += remove_index
-        continue1 = False
-
-word = "wider"
+wordle = "wider"
 guess = "beret"
+temp_wordle = ""
 
 i = 0
 w_index = ''
 g_index = ''
 green = ""
+yellow = ""
 
 loop = 5
+y_loop = 5
 
 while not loop == 0:
-    w_index = word[i]
+    w_index = wordle[i]
     g_index = guess[i]
 
     if w_index == g_index:
         green += "*"
 
-        loop1 -= 1
+        loop -= 1
         i += 1
 
     else:
@@ -42,29 +35,22 @@ loop = 5
 print(green)
 
 while not loop == 0:
-    continue1 == True
+    continue1 = True
 
     r_i = 0
     remove_index = green[i]
 
+    i += 1
 
     if remove_index == '@':
         pass
 
     else:
-        green += remove_index
+        yellow += remove_index
         continue1 = False
 
     if not continue1:
         pass
 
     elif continue1:
-        
-
-
-
-
-    
-
-
-
+        pass

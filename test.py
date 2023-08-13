@@ -1,4 +1,3 @@
-word = "hello"
-guess = "lheol"
+import test1
 
-loop = 5
+print(test1.run())

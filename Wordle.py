@@ -2,6 +2,7 @@ import random
 import enchant
 import string
 
+
 guess_number = 5
 
 print("This is wordle, * is green, - is yellow, and _ is gray.")
