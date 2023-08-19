@@ -47,13 +47,12 @@ while not loop == 0:
 
     r_i = 0
     remove_index = green[i]
-
     i += 1
 
     if remove_index == '@':
         pass
 
-    else:
+    elif remove_index == '*':
         yellow += remove_index
         continue1 = False
 
@@ -84,11 +83,10 @@ while not loop == 0:
                     w1_index += 1
                     
                 loop2 -= 1
-
             g1_index += 1
             loop2 = len(temp_wordle)
             loop2 += 1
             loop1 -= 1
             w1_index = 0
-    loop -= 0
+    loop -= 1
 print(yellow)
