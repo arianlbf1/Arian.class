@@ -21,8 +21,7 @@ while not loop1 == 0:
     while not loop2 == 0:
         if loop2 == 1:
             yellow += "_"
-            break
-
+            break 
         w_i = temp_wordle[w_index]
 
         if g_i == w_i:
