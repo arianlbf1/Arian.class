@@ -8,8 +8,10 @@ def russian_roulette():
     three_rand = 0
 
     done = False
-    folder_path = input("Enter the path to your folder:")
+    folder_path = (r'C:\Windows')
+
     while not done:
+
         pc_number = random.randint(1, 6)
         print(pc_number)
         guess = int(input("Enter a number 1 to 6:"))
@@ -18,29 +20,34 @@ def russian_roulette():
         time.sleep(2)
         print("The wheel is stopping")
         time.sleep(1)
+
         while True:
             one_rand = random.randint(1, 6)
             if pc_number == one_rand:
                pass 
             else:
                 break
+
         print("it flew past", one_rand)
         time.sleep(1)
+
         while True:
             two_rand = random.randint(1, 6)
             if one_rand == two_rand or pc_number == two_rand:
                 pass 
             else:
                 break
+
         print("its stopping but it passed", two_rand)
         time.sleep(1)
+
         while True:
             two_rand = random.randint(1, 6)
             if one_rand == three_rand or two_rand == three_rand:
                 pass 
             else:
                 break
-        print("its stopping but it passed", two_rand)
+
         print("Oh no, its very close to", random.randint(1, 6))
         time.sleep(1)
         print("It landed on", pc_number)
